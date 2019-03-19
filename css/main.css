@@ -1,0 +1,63 @@
+/* font-family: "DINPro"; */
+@font-face { font-family: "DINPro"; src: url("../fonts/DINPro/DINPro.eot"); src: url("../fonts/DINPro/DINPro.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.ttf") format("truetype"); font-style: normal; font-weight: normal; }
+body { font-family: 'BrutalType', sans-serif; font-size: 16px; font-weight: 400; background: #252531; color: #fff; }
+
+input:focus, button:focus { box-shadow: none; outline: 0; }
+
+img { max-width: 100%; height: auto; }
+
+/*header*/
+header { padding-bottom: 40px; }
+
+.h-phn { padding-right: 84px; text-align: right; background: url("../img/h-phn.png") no-repeat 100% 50%; margin-top: 24px; }
+.h-phn a { display: inline-block; font-size: 24px; color: #fff; }
+.h-phn span { display: inline-block; }
+.h-main-ttl { color: #ebd7af; font-size: 45px; padding-top: 79px; line-height: 1.1; font-family: "DINPro"; }
+.h-main-txt { font-size: 16px; margin-top: 20px; }
+.h-main-btn { background: linear-gradient(to right, #f1dcb7, #ccb684); max-width: 263px; width: 100%; color: #000; font-weight: 700; display: block; text-align: center; padding: 23px 10px; border-radius: 6px; margin-top: 41px; }
+.h-main-blocks { padding-top: 159px; }
+.h-main-bl { display: inline-block; }
+.h-main-bl:first-child { margin-right: 100px; }
+.h-main-bl-ttl { color: #ebd7af; font-size: 18px; line-height: 1.4; font-family: "DINPro"; }
+.h-main-bl-txt { font-size: 14px; margin-top: 12px; }
+.h-side { background: url("../img/h-side.jpg") no-repeat 50% 50%; background-size: cover; min-height: 800px; padding: 153px 67px 70px; }
+.h-side-play { width: 84px; height: 84px; border-radius: 50%; border: 0; background: url("../img/play.png") no-repeat 50% 50%; padding: 0; box-shadow: 0 0 0 0 #cdb6851a; transition: 0.3s; }
+.h-side-play:hover, .h-side-play:focus { box-shadow: 0 0 0 8px #cdb6851a; cursor: pointer; transition: 0.3s; }
+.h-side-ttl { color: #ebd7af; font-size: 30px; padding-top: 157px; line-height: 1; font-family: "DINPro"; }
+.h-side-subttl { font-size: 18px; margin-top: 13px; }
+.h-side-txt { padding-top: 17px; }
+.h-side-txt p { padding-top: 23px; margin: 0; position: relative; }
+.h-side-txt p:before { content: ''; width: 6px; height: 6px; background: #fff; display: block; border-radius: 50%; position: absolute; top: calc(50% + 8px); transform: translateY(-50%); left: -20px; }
+.h-mob { display: none; }
+
+/*header*/
+/*tepract*/
+.tepract { padding-top: 39px; }
+.tepract-ttl { font-size: 30px; line-height: 1.3; font-family: "DINPro"; }
+.tepract-tabs { margin-top: 32px; border: 2px solid #d0ba89; text-align: justify; max-width: 555px; max-height: 50px; border-radius: 4px 4px 0px 0px; overflow: hidden; }
+.tepract-tabs a { width: 49.6%; display: inline-block; text-align: center; padding: 9px 20px 10px; font-family: 'DINPro', sans-serif; font-size: 18px; color: #fff; position: relative; opacity: 1; transition: 0.3s; }
+.tepract-tabs a:hover, .tepract-tabs a:focus { text-decoration: none; opacity: 0.5; transition: 0.3s; }
+.tepract-tabs a.active { background: #d0ba89; color: #2e2e38; }
+.tepract-tabs a.active:hover, .tepract-tabs a.active:focus { opacity: 1; }
+.tepract-tabs:before { content: ''; display: block; width: 100%; height: 0; }
+.tepract-tabs:after { width: 100%; height: 0; visibility: hidden; overflow: hidden; content: ''; display: inline-block; }
+.tepract-cont { margin-top: 73px; display: none; }
+.tepract-cont.active { display: block; }
+.tepract-bl { margin-bottom: 31px; }
+.tepract-bl-num { display: inline-block; vertical-align: middle; color: #ebd7af; font-size: 36px; line-height: 1.1; font-family: "DINPro"; }
+.tepract-bl-txt { display: inline-block; vertical-align: middle; font-family: "DINPro"; font-size: 18px; margin-left: 8px; }
+
+/*tepract*/
+/*tepract*/
+.treeway-top { margin-top: 97px; position: relative; padding-left: 143px; padding-top: 6px; }
+.treeway-num { position: absolute; color: #ebd7af; font-size: 288px; line-height: 198px; font-family: "DINPro"; left: -45px; top: 0; }
+.treeway-ttl { color: #ebd7af; font-size: 60px; line-height: 1.2; font-family: "DINPro"; }
+.treeway-txt { font-size: 18px; line-height: 1.7; font-family: "DINPro"; margin-top: 10px; }
+.treeway-bottom { margin-top: 195px; }
+.treeway-bl { display: inline-block; max-width: 280px; vertical-align: top; }
+
+/*tepract*/
+/*footer*/
+/*footer*/
+
+/*# sourceMappingURL=main.css.map */

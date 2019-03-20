@@ -100,15 +100,103 @@ header {padding-bottom: 40px;}
 /*tepract*/
 
 /*tepract*/
-.treeway{
+.treeway{ padding-bottom: 50px;
     &-top { margin-top: 97px; position: relative; padding-left: 143px; padding-top: 6px; } 
     &-num { position: absolute; color: #ebd7af; font-size: 288px; line-height: 198px; font-family: "DINPro"; left: -45px; top: 0; } 
     &-ttl { color: #ebd7af; font-size: 60px; line-height: 1.2; font-family: "DINPro"; }
     &-txt { font-size: 18px; line-height: 1.7; font-family: "DINPro"; margin-top: 10px;}
     &-bottom { margin-top: 195px; } 
-    &-bl { display: inline-block; max-width: 280px; vertical-align: top; }
+    &-bl { display: inline-block; max-width: 280px; vertical-align: top;margin-right: 144px; 
+        &-ttl { font-size: 20px; color: #ebd7af; padding-top: 28px; line-height: 1.1; font-family: "DINPro"; } 
+        &-txt { font-size: 14px; padding-top: 13px; } 
+        &:last-child { margin-right: 0; }
+    }
 }
 /*tepract*/
+
+/*atm*/
+.atm { padding-top: 64px; 
+    &-top { position: relative; padding-top: 56px; max-width: 670px; 
+        &:before { content: ''; position: absolute; width: calc(100% + 11vw); background: linear-gradient(to bottom, #f1dcb8, #ccb584); height: 100%; top: 0; left: 50%; transform: translateX(-50%); z-index: -1; } 
+        &-ttl { font-size: 30px; color: #000; line-height: 1.3; font-family: "DINPro"; }
+        &-vid { min-height: 390px; margin-top: 69px; position: relative; 
+            &-pl { position: absolute; top: 52px; right: 48px;
+                &-btn { width: 84px; height: 84px; border-radius: 50%; border: 0; background: url('../img/play.png')no-repeat 50% 50%; padding: 0; box-shadow: 0 0 0 0 #cdb6851a; transition: 0.3s; 
+                    &:hover, &:focus {box-shadow: 0 0 0 8px #cdb6851a; cursor: pointer; transition: 0.3s;}
+                }  
+                &-txt { font-size: 18px; color: #fff; line-height: 1.3; font-family: "DINPro"; margin-top: 13px; padding-left: 4px; }
+            }
+        }
+    } 
+    &-eight { padding-left: 63px; min-height: 100%; padding-top: 316px; 
+        &-num { display: inline-block; vertical-align: bottom; color: #ebd7af; font-size: 266px; line-height: 210px; font-family: "DINPro"; } 
+        &-txt { display: inline-block; vertical-align: bottom; color: #ebd7af; font-size: 36px; line-height: 1.2; font-family: "DINPro"; padding-top: 0px; }
+    } 
+    &-bottom {padding: 0 15px;}
+    &-bl { min-height: 297px; background: #24242f;
+        &-in { height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+        &-num { align-items: flex-start;font-size: 36px; font-family: 'DINPro', sans-serif; margin-top: 21px; color: #ebd7af; } 
+        &-txt { align-items: flex-end;color: #ebd7af; font-size: 14px; margin-bottom: 19px; }
+        &.blue {background: #96b7d1;
+            .atm-bl {
+                &-num {color: #252531;}
+                &-txt {color: #252531;}
+            }
+        }
+        &.gold {background: linear-gradient(to bottom, #f1dcb8, #ccb584);
+            .atm-bl {
+                &-num {color: #252531;}
+                &-txt {color: #252531;}
+            }
+        }
+    }
+} 
+/*atm*/
+
+/*videos*/
+.videos { padding-top: 71px; padding-bottom: 40px; 
+    &-ttl { color: #ebd7af; font-size: 60px; line-height: 1.2; font-family: "DINPro"; }  
+    &-cont { padding-top: 86px; }
+    &-img { position: relative; padding: 0;
+        &-pl { position: absolute; top: 52px; left: 48px;
+            &-btn { width: 84px; height: 84px; border-radius: 50%; border: 0; background: url('../img/play-black.png')no-repeat 50% 50%; padding: 0; box-shadow: 0 0 0 0 #cdb6851a; transition: 0.3s; 
+                &:hover, &:focus {box-shadow: 0 0 0 8px #cdb6851a; cursor: pointer; transition: 0.3s;}
+            }  
+            &-txt { font-size: 18px; color: #fff; line-height: 1.3; font-family: "DINPro"; margin-top: 13px; padding-left: 4px; }
+        }
+    }    
+}
+/*videos*/
+
+/*sixth*/
+.sixth { padding-top: 50px; padding-bottom: 35px;
+    &-bl { background: #b0cce2; min-height: 529px; }
+}
+/*sixth*/
+
+/*step*/
+.step { padding-top: 35px; padding-bottom: 100px;
+    .container { max-width: 1300px; padding: 0 15px; }
+    &-cont {background: url(../img/step.png) no-repeat; background-size: cover; border-radius: 9px; max-width: 100%; margin: 0 auto; padding: 40px 80px 51px;}
+    &-ttl { color: #252531; font-size: 48px; line-height: 1.1; font-family: "DINPro"; } 
+    &-txt { margin-top: 78px; 
+        &-bl { color: #252531; font-size: 22px; font-family: 'DINPro', sans-serif;padding-bottom: 13px; border-bottom: 1px solid #91b0ca; }
+    } 
+    &-btm { margin-top: 69px; 
+        &-btn { color: #000; text-align: center; display: block; max-width: 248px; font-size: 14px; font-weight: 700; letter-spacing: 1px; border-radius: 6px; border: 0; background: #85a8c4; padding: 24px 10px; } 
+        &-txt { font-size: 12px; color: #000; padding: 13px 0; line-height: 1.2; }
+    } 
+} 
+/*step*/
+
+/*buy*/
+.buy { padding-top: 68px; 
+    &-ttl { color: #ebd7af; font-size: 48px; line-height: 1.2; font-family: "DINPro"; } 
+    &-txt { color: #ebd7af; font-size: 22px; line-height: 1.4; font-family: "DINPro"; margin-top: 29px; } 
+    &-btn { color: #000; text-align: center; display: block; max-width: 264px; font-size: 14px; font-weight: 700; letter-spacing: 1px; border-radius: 6px; border: 0; background: linear-gradient(to right, #f1ddb7, #cdb684); padding: 24px 10px; text-transform: uppercase; margin-top: 53px; }
+} 
+
+/*buy*/
 
 /*footer*/
 footer {}

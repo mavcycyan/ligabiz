@@ -117,12 +117,92 @@ header { padding-bottom: 40px; }
 /*step*/
 /*buy*/
 .buy { padding-top: 68px; }
+.buy-cont { padding-bottom: 480px; position: relative; }
+.buy-cont:before { content: ''; position: absolute; width: calc(100% + 210px); height: 100%; top: 0; left: 50%; transform: translateX(-50%); background: url("../img/buy-back.png") no-repeat 50% 100%; background-size: 100% auto; z-index: -1; }
 .buy-ttl { color: #ebd7af; font-size: 48px; line-height: 1.2; font-family: "DINPro"; }
 .buy-txt { color: #ebd7af; font-size: 22px; line-height: 1.4; font-family: "DINPro"; margin-top: 29px; }
 .buy-btn { color: #000; text-align: center; display: block; max-width: 264px; font-size: 14px; font-weight: 700; letter-spacing: 1px; border-radius: 6px; border: 0; background: linear-gradient(to right, #f1ddb7, #cdb684); padding: 24px 10px; text-transform: uppercase; margin-top: 53px; }
 
 /*buy*/
+/*prods*/
+.prods { padding-top: 96px; padding-bottom: 40px; }
+.prods .container { max-width: 1200px; }
+.prods .p0 { padding: 0; }
+.prods-cont { margin: 0; }
+.prods-bl { padding: 46px 52px 0; }
+.prods-bl-ttl { font-size: 30px; font-family: 'DINPro', sans-serif; color: #252531; line-height: 1.2; }
+.prods-bl-txt { margin-top: 16px; color: #252531; }
+.prods-bl-img { text-align: center; margin-top: 11px; }
+.prods-bl.gray { background: #b4b4b4; border-radius: 8px 8px 0 0; }
+.prods-bl.gray .prods-bl-ttl { font-size: 36px; }
+.prods-bl.gray .prods-bl-img { margin-top: -10px; }
+.prods-bl.gold { background: #d9b17f; border-radius: 0 8px 8px 0; margin-top: 259px; padding: 35px 52px 0; }
+.prods-bl.silver { background: #ececec; border-radius: 0 0 0 8px; }
+
+/*prods*/
+/*fv*/
+.fv { padding-top: 26px; padding-bottom: 50px; }
+.fv .container { max-width: 1215px; }
+.fv-ttl { color: #ebd7af; font-size: 48px; line-height: 1.2; font-family: "DINPro"; padding-left: 15px; }
+.fv-cont { padding-top: 58px; position: relative; }
+.fv-cont:before { content: ''; position: absolute; top: 56%; left: 0; transform: translate(-86%, -50%); width: 279px; height: 452px; background: url("../img/fv-five.png") no-repeat; background-size: cover; }
+.fv-cont .row { margin: 0 0; }
+.fv-cont .row .col-12 { padding: 0; }
+.fv-bl { padding: 27px 0 8px; padding-left: 33px; }
+.fv-bl-num { color: #ebd7af; font-size: 36px; line-height: 1.2; font-family: "DINPro"; }
+.fv-bl-img { margin-top: 27px; min-height: 50px; }
+.fv-bl-ttl { margin-top: 9px; font-size: 18px; color: #ebd7af; line-height: 1.2; height: 42px; overflow: hidden; }
+.fv-bl-txt { padding-top: 10px; line-height: 1.5; font-size: 14px; }
+
+/*fv*/
+/*stories*/
+.stories { padding-top: 22px; padding-bottom: 50px; }
+.stories .container { max-width: 1200px; }
+.stories-ttl { color: #ebd7af; font-size: 48px; line-height: 1.2; font-family: "DINPro"; padding-left: 15px; }
+.stories-cont { margin-top: 45px; position: relative; }
+.stories-bl { display: block; position: relative; }
+.stories-bl-ttl { position: absolute; top: 29px; left: 17px; font-size: 24px; color: #000; line-height: 1.2; font-family: 'DINPro', sans-serif; }
+.stories-bl-play { width: 84px; height: 84px; display: block; border-radius: 50%; border: 0; background: url(../img/play-black.png) no-repeat 50% 50%; padding: 0; position: absolute; bottom: 29px; left: 17px; box-shadow: 0 0 0 0 #cdb6851a; transition: 0.3s; }
+.stories .lSAction > a { width: 60px; height: 60px; background: #000; border-radius: 50%; top: 50%; background-position: 47% 50%; background-repeat: no-repeat; transform: translateY(-50%); }
+.stories .lSAction > .lSPrev { left: -100px; background-image: url("../img/arr-left.png"); }
+.stories .lSAction > .lSNext { right: -100px; background-image: url("../img/arr-left.png"); transform: rotate(-180deg); }
+.stories .lSAction:hover, .stories .lSAction:focus { background-position: 47% 50%; }
+
+/*stories*/
+/*otz*/
+.otz { padding-top: 22px; padding-bottom: 50px; }
+.otz .container { max-width: 1200px; }
+.otz-ttl { color: #ebd7af; font-size: 48px; line-height: 1.2; font-family: "DINPro"; padding-left: 15px; }
+.otz-cont { margin-top: 74px; position: relative; }
+.otz-bl { display: block; position: relative; }
+.otz-bl-img { text-align: center; }
+.otz .lSAction > a { width: 60px; height: 60px; background: #000; border-radius: 50%; top: 50%; background-position: 47% 50%; background-repeat: no-repeat; transform: translateY(-50%); }
+.otz .lSAction > .lSPrev { left: -100px; background-image: url("../img/arr-left.png"); }
+.otz .lSAction > .lSNext { right: -100px; background-image: url("../img/arr-left.png"); transform: rotate(-180deg); }
+.otz .lSAction > .lSPrev:hover, .otz .lSAction > .lSPrev:focus, .otz .lSAction > .lSNext:hover, .otz .lSAction > .lSNext:focus { background-position: 47% 50%; }
+
+/*otz*/
+/*atten*/
+.atten { padding-top: 5px; padding-bottom: 29px; }
+.atten-ttl { font-size: 60px; font-family: 'DINPro', sans-serif; line-height: 1.2; }
+.atten-txt { font-size: 18px; font-family: 'DINPro', sans-serif; margin-top: 34px; max-width: 790px; }
+.atten-txt p { margin-bottom: 18px; }
+
+/*atten*/
 /*footer*/
+footer { padding-top: 29px; padding-bottom: 50px; }
+
+.f-totop { display: block; float: left; border: 1px solid #535360; padding: 19px 32px; padding-left: 11px; border-radius: 25px; color: #535360; cursor: pointer; }
+.f-totop span { display: inline-block; width: 42px; height: 42px; border-radius: 50%; background: url("../img/arr-up.png") no-repeat 50% 50%, #292934; vertical-align: middle; margin-right: 16px; }
+.f-totop:hover, .f-totop:focus { color: #535360; text-decoration: none; }
+.f-phn { display: block; float: right; border: 1px solid #535360; padding: 14px 26px; padding-left: 11px; border-radius: 25px; color: #535360; width: 100%; max-width: 310px; }
+.f-phn .ic { width: 53px; height: 52px; display: block; float: left; background: url("../img/h-phn.png") no-repeat 100% 50%; margin-right: 16px; }
+.f-phn .num { font-size: 24px; color: #fff; margin-left: 5px; display: block; line-height: 1.2; }
+.f-phn .txt { display: block; color: #535360; }
+.f-phn:hover, .f-phn:focus { text-decoration: none; }
+.f-phn:hover .num, .f-phn:focus .num { color: #fff; }
+.f-phn:hover .txt, .f-phn:focus .txt { color: #535360; }
+
 /*footer*/
 
 /*# sourceMappingURL=main.css.map */

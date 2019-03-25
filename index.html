@@ -13,6 +13,7 @@
 	<title>Лига Бизнеса</title> 
    
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
@@ -32,6 +33,16 @@
 
 <body>
 
+<div class="fixed-side">
+    <button class="fixed-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <a href="#" class="fixed-soc-fb" target="_blank"></a>
+    <a href="#" class="fixed-soc-vk" target="_blank"></a>
+</div>
+
 <header>
     <div class="container">
         <div class="row">
@@ -43,7 +54,7 @@
                 <div class="h-main">
                     <div class="h-main-ttl">Лига бизнеса<br>для действующих и будущих<br>предпринимателей</div>
                     <div class="h-main-txt">Приведем вас к успеху и заработку от 100 000 руб. в<br>первый месяц за счет авторских методик освоения продаж<br>и самоконтроля</div>
-                    <a href="#" class="h-main-btn">ВСТУПИТЬ В ЛИГУ!</a>
+                    <a href="#" class="h-main-btn c_back">ВСТУПИТЬ В ЛИГУ!</a>
                     <div class="h-main-blocks">
                         <div class="h-main-bl">
                             <div class="h-main-bl-ttl">Офлайн и онлайн<br>встречи</div>
@@ -294,23 +305,23 @@
     <div class="step">
         <div class="container">
            <div class="step-cont">
-               <div class="row">
+               <form class="row">
                     <div class="col-12 col-lg-7">
                         <div class="step-ttl">Сделай первый шаг к <br>своему успешному бизнесу!</div>
                         <div class="step-txt">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <div class="step-txt-bl">Представьтесь пожалуйста</div>
+                                    <div class="step-txt-bl"><input type="text" placeholder="Представьтесь пожалуйста" required /></div>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <div class="step-txt-bl">Номер вашего телефона</div>
+                                    <div class="step-txt-bl"><input type="text" placeholder="Номер вашего телефона" required /></div>
                                 </div>
                             </div>
                         </div>
                         <div class="step-btm">
                             <div class="row">
                                 <div class="col-12 col-lg-5">
-                                    <a href="#" class="step-btm-btn">ОТПРАВИТЬ ЗАЯВКУ</a>
+                                    <button type="submit" class="step-btm-btn">ОТПРАВИТЬ ЗАЯВКУ</button>
                                 </div>
                                 <div class="col-12 col-lg-7">
                                     <div class="step-btm-txt">Нажимая кнопку «Отправить заявку» <br>Вы соглашаетесь на обработку<br>персональных данных</div>
@@ -318,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-               </div>
+               </form>
            </div>
         </div>
     </div>
@@ -328,7 +339,7 @@
                 <div class="buy-ttl">Приобритите 1 из 50 билетов<br>всего за 16 000 рублей<br>пока цена не выросла</div>
                 <div class="buy-txt">Спешите забронировать место на нашем уникальном курсе. По мере <br>повышения спроса цена билетов возрастает на 1000 <br>рублей. Поскуольку главная заповедь делового человека —<br>
     разумная экономика участие в семинаре, как раз то, что вам <br>нужно!</div>
-                <a href="#" class="buy-btn">Купить прямо сейчас</a>
+                <a href="#" class="buy-btn c_back">Купить прямо сейчас</a>
            </div>
         </div>
     </div>
@@ -498,29 +509,15 @@
 </footer>
 
 
-<div style="display:none;">
-    <div id="modal_auth" class="modal_auth" style="display: block;">
-        <div class="clearfix"></div>
-        <div class="container">
-            <form action="" method="" class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <div class="modal_auth-bl">
-                        <input name="mail" type="text" placeholder="E-mail" required />
-                     </div> 
-                    <div class="modal_auth-bl">
-                        <input name="pass" type="password" placeholder="Пароль" required /> 
-                     </div>  
-                    <div class="modal_auth-bl">
-                        <button type="submit"><span>Войти</span></button> 
-                        <a href="#" class="modal_auth-bl-forg_pass fp">Напомнить пароль</a> 
-                     </div>                                            
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <div class="modal_auth-ttl">Вход</div>
-                </div>               
-            </form>
-        </div>			
-    </div>    
+<div style="display: none;">
+    <div id="form_call_back" class="form_call_back">
+        <div class="form_call_back-ttl">Заполните форму <br>для вступления в лигу </div>
+        <div class="clearfix"></div>	
+        <form action="" method="post">
+            <input name="phone" type="text" placeholder="Номер телефона" required />
+            <input type="submit" value="Я хочу вступить в лигу!" /> 
+        </form>			
+    </div>
 </div>
 
   
